@@ -11,6 +11,9 @@ venv/
 .env
 *.env
 
+# Preferencias pessoais do Claude Code
+CLAUDE.local.md
+
 # Dados gerados e bancos locais
 data/*.csv
 data/*.db
