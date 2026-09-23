@@ -33,7 +33,7 @@ tests/        testes automatizados
 ## Roadmap
 
 - [x] Estrutura do projeto
-- [ ] Gerador de dados sintéticos de vendas
+- [x] Gerador de dados sintéticos de vendas
 - [ ] Pipeline de limpeza e carga em SQLite
 - [ ] Modelo base de previsão (média móvel) e modelo com scikit-learn
 - [ ] API com FastAPI
@@ -47,7 +47,12 @@ python -m venv .venv
 .venv\Scripts\activate        # Windows
 pip install -e ".[dev]"
 pytest
+python -m src.pipeline.generate_data   # gera data/vendas.csv
 ```
+
+## Dados
+
+Os dados são sintéticos: 20 produtos de uma loja de materiais, 2 anos de vendas diárias, com sazonalidade semanal e anual, tendência de crescimento e ruído (distribuição de Poisson). Mesma `--seed`, mesmos dados.
 
 ## Stack
 
