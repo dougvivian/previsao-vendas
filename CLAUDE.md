@@ -26,5 +26,6 @@ Pipeline de previsão de vendas (varejo de materiais): dados sintéticos -> SQLi
 
 ## Git
 
-- Nunca commitar direto na `main`. Uma branch por funcionalidade: `feat/...`, `fix/...`, `docs/...`, e PR para a `main`.
+- Projeto solo: commits direto na `main`, pequenos e frequentes, um por mudança lógica. Não abrir branch nem PR, salvo se o Douglas pedir.
+- Só commitar com `pytest` passando.
 - Mensagens de commit em português, no imperativo, primeira linha curta ("Adiciona pipeline de carga em SQLite").
