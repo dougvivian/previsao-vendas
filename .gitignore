@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Ambiente e segredos
+.env
+*.env
+
+# Dados gerados e bancos locais
+data/*.csv
+data/*.db
+data/*.sqlite
+!data/.gitkeep
+
+# Notebooks e editores
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
